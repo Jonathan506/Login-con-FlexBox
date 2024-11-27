@@ -1,26 +1,32 @@
 *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: 'Sen', sans-serif;
     font-weight: 100;
 }
 
 body{
-    background-color: #000;
+    background-color: #4d4949;
 }
 
 .flex_container{
+    background-color: #222;
+    border: 14px solid #000;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #222;
     margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
-    border: 14px solid #000;
     outline: 3px solid #094;
+    width: 50%;
 }
 
 .form{
-    min-width: 400px;
+    min-width: 225px;
     flex: 1;
     text-align: center;
     padding: 30px;
@@ -28,23 +34,21 @@ body{
 }
 
 .form_input{
-    width: 100%;
-    padding: 7px;
-    margin: 6px 0;
+    background-color: transparent;
     border: none;
     border-bottom: 3px solid #1c7;
-    background-color: transparent;
     color: #fff;
+    padding: 7px;
+    width: 100%;
 }
 
 .form_input:focus{
     background: linear-gradient(to bottom, transparent, #111);
     outline: none;
-    border-bottom: 3px solid #5f9;
 }
 
 textarea{
-    min-height: 140px;
+    min-height: 100px;
     resize: none;
 }
 
@@ -52,24 +56,16 @@ textarea{
     flex: 1;
     display: flex;
     padding: 10px;
-    min-width: 300px;
+    min-width: 100px;
     max-width: 400px;
     order: 2;
-}
-
-.form_image div{
-    padding: 10px;
-}
-
-.img-container{
-    margin: auto;
 }
 
 .class-img{
     border-radius: 50%;
     background-color: #fff;
     text-align: center;
-    padding: 40px;
+    padding: 10px;
 }
 
 .form_image img{
@@ -82,14 +78,12 @@ textarea{
     border-radius: 5px;
     margin-top: 10px;
     padding: 12px;
-    transition: all .2s;
+    transition: all .3s;
     width: 30%;
 }
 
 .form_input[type="submit"]:hover{
     background-color: #18b840;
-    border-bottom: none;
-    padding: 12px;
 }
 
 .form_input[type="submit"]:focus{
